@@ -1,0 +1,16 @@
+clc;
+clear all;
+close all;
+syms n w0;
+a=ztrans((1/4).^n);
+disp(a);
+a1=iztrans(a);
+disp(a1);
+b=ztrans(sin(w0.*n));
+disp(b);
+b1=iztrans(b);
+disp(b1);
+c=ztrans(cos(w0.*n));
+disp(c);
+c1=iztrans(c);
+disp(c1);
