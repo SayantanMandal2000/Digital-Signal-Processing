@@ -1,0 +1,14 @@
+clc;
+n=-1:0.1:10;
+x1=cos(1*pi*1*n);
+subplot(2,2,1);
+stem(n,x1);
+x2=[n==5];
+subplot(2,2,2);
+stem(n,x2);
+x3=[n>=6];
+subplot(2,2,3);
+stem(n,x3);
+subplot(2,2,4);
+x=x1+x2+x3;
+stem(n,x);
