@@ -2,7 +2,7 @@ clc;
 clear all;
 close all;
 syms z;
-%% Z Transform of 1st Sequence
+%% Z Transform of 1st Sequence   
 x=[3 2 -1 1];
 for i=1:length(x)
     zt(i)=[x(i).*z.^-(i-1)];
@@ -16,7 +16,7 @@ for i=1:length(y)
 end
 Yz=sum(zt1);
 disp(Yz);
-%% Proof of Linearity Property of Z Transform
+%% Proof of Linearity Property of Z Transform   
 a=2;
 b=3;
 m=((a.*x)+(b.*y));
